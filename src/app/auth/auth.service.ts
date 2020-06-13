@@ -16,7 +16,7 @@ const httpOptions = {
 })
 export class AuthService {
  
-  private loginUrl =  window["apiBaseUrl"]+"/gatewayData"; 
+  private loginUrl =  window["apiBaseUrl"]+"/signin"; 
 
   constructor(private http: HttpClient) {
   }
