@@ -6,7 +6,9 @@ import { JwtResponse } from './jwt-response';
 import { AuthLoginInfo } from './login-info';
 
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders({ 'Content-Type': 'application/json' ,
+  'Access-Control-Allow-Origin':'*', 
+  "Access-Control-Allow-Credentials" : "true"})
 };
 
 @Injectable({
@@ -14,7 +16,7 @@ const httpOptions = {
 })
 export class AuthService {
  
-  private loginUrl =  window["apiBaseUrl"]+"userDetails/signin"; 
+  private loginUrl =  window["apiBaseUrl"]+"/gatewayData"; 
 
   constructor(private http: HttpClient) {
   }
