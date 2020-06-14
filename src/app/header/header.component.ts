@@ -27,7 +27,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
     this.userAuthenticate(); 
-    if(this.info.role == 'ADMIN') {
+    if(this.info.role == 'admin') {
       this.getAllTripDetails(); 
     } else if(this.info.role == 'CUSTOMER') {
       this.getTripDetailsOfCustomer();
