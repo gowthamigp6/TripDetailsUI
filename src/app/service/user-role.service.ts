@@ -7,8 +7,8 @@ import { TripDetails } from '../model/trip.model';
 @Injectable()
 export class UserRoleService {
 
-  private userUrl = window["apiBaseUrl"]+"userDetails";
-  private tripUrl = window["apiBaseUrl"]+"tripDetails";
+  private userUrl = window["apiBaseUrl"]+"/userDetails";
+  private tripUrl = window["apiBaseUrl"]+"/tripDetails";
 
   constructor(private http: HttpClient) { }
 
